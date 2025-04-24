@@ -1,0 +1,163 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Estilo para a navbar */
+.navbar {
+    background-color: #8B5E3C;
+}
+
+/* Estilo para o link ativo na navbar */
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #8B5E3C;
+}
+
+/* Estilo para os links e navbar brand */
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+/* Cor do botão navbar-toggler */
+.navbar-toggler {
+    background-color: #f3e5dc;
+}
+
+/* Estilo para os títulos das seções */
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+/* Estilo para o fundo das seções específicas */
+#sobre, #menu-de-cafes {
+    background-color: #f3e5dc;
+}
+
+#cenas-do-dia, #fale-conosco {
+    background-color: #ffffff;
+}
+
+/* Cor de texto personalizada */
+.text-colored {
+    color: #8B5E3C;
+}
+
+/* Estilo para o botão de contato e nav links ativos */
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #8B5E3C; /* Fundo escuro para o botão */
+    color: #fff;
+    border: 1px solid #8B5E3C; /* Cor das bordas */
+}
+
+/* Estilo para os links do cardápio ao passar o mouse */
+.nav-cardapio .nav-link:hover {
+    color: #8B5E3C;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/* Ajuste para imagens na mesma altura dentro dos cards */
+.card img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Ajuste responsivo para o carrossel em dispositivos móveis */
+@media (max-width: 767px) {
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 280px;
+    }
+}
+
+/* Estilo para o botão de enviar no formulário de contato */
+#fale-conosco button {
+    background-color: #8B5E3C; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    border: 1px solid #8B5E3C; /* Cor das bordas */
+}
+
+/* Estilo para o botão de enviar ao passar o mouse */
+#fale-conosco button:hover {
+    background-color: #6f4e37; /* Tom mais escuro ao passar o mouse */
+    border-color: #6f4e37; /* Cor das bordas ao passar o mouse */
+}
+
+/* Estilo para os campos de formulário, com borda personalizada */
+#fale-conosco .form-control {
+    border: 1px solid #8B5E3C; /* Cor da borda */
+}
+
+/* Foco nos campos de formulário */
+#fale-conosco .form-control:focus {
+    border-color: #8B5E3C; /* Cor da borda ao focar no campo */
+    box-shadow: 0 0 0 0.25rem rgba(139, 94, 60, 0.5); /* Efeito de sombra no foco */
+}
+
+/* Ajuste para a rolagem nas seções */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* Ajuste para as imagens dentro da seção Cenas do Dia */
+#cenas-do-dia .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px; /* Garante que a coluna tenha altura suficiente para o texto */
+}
+
+#cenas-do-dia img {
+    object-fit: cover;
+    height: 220px; /* Define uma altura fixa para todas as imagens */
+    width: 100%;
+    border-radius: 5px; /* Deixa a borda arredondada */
+}
+
+/* Ajuste específico para garantir que todas as imagens nas colunas sejam do mesmo tamanho */
+#cenas-do-dia .row img {
+    height: 220px; /* A altura é definida para todas as imagens */
+    width: 100%;  /* Garante que todas as imagens ocupem a largura da coluna */
+    object-fit: cover; /* Faz com que a imagem ocupe o espaço sem distorção */
+}
+
+/* Ajuste para as imagens dentro da seção Menu de Cafés */
+#menu-de-cafes .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px; /* Garante que a coluna tenha altura suficiente para o texto */
+}
+
+#menu-de-cafes img {
+    object-fit: cover;
+    height: 220px; /* Define uma altura fixa para todas as imagens */
+    width: 100%;
+    border-radius: 5px; /* Deixa a borda arredondada */
+}
+
+/* Ajuste específico para garantir que todas as imagens nas colunas do menu de cafés sejam do mesmo tamanho */
+#menu-de-cafes .row img {
+    height: 220px; /* A altura é definida para todas as imagens */
+    width: 100%;  /* Garante que todas as imagens ocupem a largura da coluna */
+    object-fit: cover; /* Faz com que a imagem ocupe o espaço sem distorção */
+}
+
+.carousel-item img {
+    height: 500px; /* A altura é definida para todas as imagens do carrossel */
+    object-fit: cover;
+    width: 100%;
+}
